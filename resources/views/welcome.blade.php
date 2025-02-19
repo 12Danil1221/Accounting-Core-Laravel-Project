@@ -463,22 +463,12 @@
                     сопровождения в разных сферах: IT, строительство, производство, общественное питание, <br>
                     оптовая и розничная торговля.</p>
                 <section class="Advantages">
-                    <div class="Advantages_div_years_of_experience">
-                        <h1 class="Advantages_h">15</h1>
-                        <p class="Advantages_p">лет опыта</p>
-                    </div>
-                    <div class="Advantages_regular_customers">
-                        <h1 class="Advantages_h">50+</h1>
-                        <p class="Advantages_p">постоянных клиентов</p>
-                    </div>
-                    <div class="Advantages_submitted_reports">
-                        <h1 class="Advantages_h">15 000+</h1>
-                        <p class="Advantages_p">сданных отчетов</p>
-                    </div>
+                    @foreach ($Advantages as $item)
                     <div class="Advantages_resolved_issues">
-                        <h1 class="Advantages_h">50 000+</h1>
-                        <p class="Advantages_p">решенных вопросов</p>
+                        <h1 class="Advantages_h">{{ $item->Advantages_integer }}</h1>
+                        <p class="Advantages_p">{{ $item->Advantages_description }}</p>
                     </div>
+                    @endforeach
                 </section>
                 <p class="content_main_p">За годы работы мы постоянно расширяли наши профессиональные компетенции, <br>
                     но не перестаем учиться и развиваться в профессиональном плане. <br>

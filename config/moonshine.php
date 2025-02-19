@@ -35,13 +35,6 @@ return [
     'prefix' => env('MOONSHINE_ROUTE_PREFIX', 'admin'),
     'page_prefix' => env('MOONSHINE_PAGE_PREFIX', 'page'),
     'resource_prefix' => env('MOONSHINE_RESOURCE_PREFIX', 'resource'),
-
-    'resources' => [
-    \App\MoonShine\Resources\PostResource::class,
-],
-
-
-
     'home_route' => 'moonshine.index',
 
     // Error handling
@@ -57,8 +50,6 @@ return [
         VerifyCsrfToken::class,
         SubstituteBindings::class,
         ChangeLocale::class,
-        'web',
-        'auth',
     ],
 
     // Storage
@@ -72,9 +63,7 @@ return [
         'guard' => 'moonshine',
         'model' => MoonshineUser::class,
         'middleware' => Authenticate::class,
-        'pipelines' => [
-            
-        ],
+        'pipelines' => [],
     ],
 
     // Authentication and profile
@@ -91,12 +80,10 @@ return [
     'forms' => [
         'login' => LoginForm::class,
         'filters' => FiltersForm::class,
-        'custom' => \App\MoonShine\Pages\Post\PostFormPage::class,
     ],
 
     'pages' => [
         'dashboard' => App\MoonShine\Pages\Dashboard::class,
-        'custom' => App\MoonShine\Pages\Post\PostIndexPage::class,
         'profile' => ProfilePage::class,
         'login' => LoginPage::class,
         'error' => ErrorPage::class,
@@ -105,6 +92,6 @@ return [
     // Localizations
     'locale' => 'en',
     'locales' => [
-        'en','ru'
+        // en
     ],
 ];
