@@ -32,8 +32,6 @@ use MoonShine\UI\Components\{Breadcrumbs,
     When};
 use App\MoonShine\Resources\AdvantagesResource;
 use MoonShine\MenuManager\MenuItem;
-use App\MoonShine\Resources\TagDetailPageResource;
-use App\MoonShine\Resources\PostResource;
 
 final class MoonShineLayout extends CompactLayout
 {
@@ -48,6 +46,7 @@ final class MoonShineLayout extends CompactLayout
     {
         return [
             ...parent::menu(),
+            MenuItem::make('Advantages', AdvantagesResource::class),
         ];
     }
 

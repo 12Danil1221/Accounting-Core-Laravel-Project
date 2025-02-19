@@ -9,5 +9,6 @@ class Advantages extends Model
 {
     use HasFactory;
 
+    protected $table = 'advantages';
     protected $fillable = ['Advantages_integer', 'Advantages_description'];
 }

@@ -11,12 +11,9 @@ use MoonShine\Laravel\DependencyInjection\MoonShine;
 use MoonShine\Laravel\DependencyInjection\MoonShineConfigurator;
 use App\MoonShine\Resources\MoonShineUserResource;
 use App\MoonShine\Resources\MoonShineUserRoleResource;
-use App\MoonShine\Pages\TagIndexPage;
-use App\MoonShine\Pages\TagFormPage;
 use App\MoonShine\Resources\AdvantagesResource;
-use App\MoonShine\Resources\TagDetailPageResource;
-use App\MoonShine\Pages\TagDetailPage;
-use App\MoonShine\Resources\PostResource;
+use MoonShine\MenuManager\MenuGroup;
+use MoonShine\MenuManager\MenuItem;
 
 class MoonShineServiceProvider extends ServiceProvider
 {
@@ -27,28 +24,18 @@ class MoonShineServiceProvider extends ServiceProvider
      */
     public function boot(CoreContract $core, ConfiguratorContract $config): void
     {
-         $config
-         ->authEnable()->title('My Application')
-         ->logo('/assets/logo.png')
-         ->prefixes('admin', 'page', 'resource')
-         ->guard('moonshine')
-         ->authEnable()
-         ->useMigrations()
-         ->useNotifications()
-         ->useDatabaseNotifications()
-         ->middleware([
-             // ...
-         ])
-         ->layout(\MoonShine\Laravel\Layouts\AppLayout::class);
+        // $config->authEnable();
 
         $core
             ->resources([
                 MoonShineUserResource::class,
                 MoonShineUserRoleResource::class,
+                AdvantagesResource::class,
             ])
             ->pages([
                 ...$config->getPages(),
             ])
         ;
     }
+    
 }
