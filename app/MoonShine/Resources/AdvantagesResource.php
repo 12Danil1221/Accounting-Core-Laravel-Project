@@ -44,7 +44,7 @@ class AdvantagesResource extends ModelResource
     {
         return [
                 ID::make()->sortable(),
-                Text::make('Count','Advantages_integer')->sortable(),
+                Text::make('Count','Advantages_integer'),
                 Text::make('Содержание', 'Advantages_description')->sortable()->required(),
         ];
     }

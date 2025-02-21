@@ -1,0 +1,402 @@
+@media (max-width: 444px) {
+
+    main .Advantages_h {
+        height: 65px;
+    }
+}
+
+@media (max-width: 1360px) {
+    main .Advantages_h {
+        height: 65px;
+    }
+
+    header .nav_left {
+        padding-right: 15rem;
+    }
+
+}
+
+@media (max-width: 1220px) {
+    body main {
+        height: 800px;
+    }
+
+    main .Advantages {
+        gap: 2rem;
+    }
+
+    main .Advantages_h {
+        height: 65px;
+    }
+
+    main .Advantages_resolved_issues {
+        right: 1rem;
+    }
+
+    body header {
+        height: 1000px;
+    }
+
+    header .nav_left {
+        padding-right: 5rem;
+    }
+
+    header .nav_center {
+        padding-right: 5rem;
+    }
+
+    header .container {
+        display: grid;
+    }
+
+    header .content_h1 {
+        left: 50px;
+    }
+
+    header .content_h1_2 {
+        height: 100px;
+    }
+
+    header .content_p1 {
+        left: 50px;
+    }
+
+    header .div_border1 {
+        left: 50px;
+    }
+}
+
+@media (max-width: 1041px) {
+    header .content_h1_2 {
+        font-size: 70px;
+    }
+
+    header .content_h1_3 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 814px) {
+    header .nav_left {
+        padding-right: 2rem;
+    }
+
+    header .nav_center {
+        padding-right: 2rem;
+    }
+
+    header .content_h1_2 {
+        font-size: 60px;
+    }
+
+    header .content_h1_3 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 730px) {
+    header .nav_left {
+        padding-right: 1rem;
+    }
+
+    header .nav_center {
+        padding-right: 1rem;
+    }
+
+    header .content_h1_2 {
+        font-size: 50px;
+    }
+
+    header .content_h1_3 {
+        font-size: 50px;
+    }
+
+    body main {
+        height: 2400px;
+    }
+
+    main .Advantages {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+    }
+
+    main .Advantages_p {
+        text-align: center;
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 580px) {
+    header .nav_menu2 {
+        display: grid;
+    }
+
+    header .div_border1 {
+        left: 0px;
+        width: 400px;
+    }
+
+    header .div_border2 {
+        width: 200px;
+    }
+
+    header .nav_center {
+        padding-right: 1rem;
+    }
+
+    header .content_h1_2 {
+        font-size: 50px;
+    }
+
+    header .content_h1_3 {
+        font-size: 50px;
+    }
+
+    main .Advantages {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+    }
+
+    main .Advantages_p {
+        text-align: center;
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 460px) {
+    header .img_1 {
+        width: 180px;
+        height: 100px;
+    }
+
+    header .content_h1 {
+        left: 30px;
+        height: 180px;
+        width: 0px;
+    }
+
+    header .nav_menu2 {
+        display: grid;
+    }
+
+    header .div_border1 {
+        left: 0px;
+        width: 300px;
+    }
+
+    header .div_border2 {
+        width: 120px;
+    }
+
+    header .nav_center {
+        padding-right: 1rem;
+    }
+
+    header .content_h1_2 {
+        font-size: 40px;
+    }
+
+    header .content_h1_3 {
+        font-size: 40px;
+    }
+
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: block;
+}
+
+/*Header*/
+header {
+    height: 543px;
+    top: -10px;
+
+    background-color: #E4DCD6;
+}
+
+li {
+    display: block;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: #000000;
+}
+
+.img_1 {
+    position: relative;
+    width: 360px;
+    height: 216px;
+    top: 49px;
+    left: 40px;
+}
+
+.nav_menu {
+    display: grid;
+}
+
+.nav_menu2 {
+    display: flex;
+}
+
+.nav_left {
+    font-size: 24px;
+    line-height: 28.8px;
+    padding-right: 25rem;
+}
+
+.nav_center {
+    font-size: 16px;
+    line-height: 19.2px;
+    top: 0.5rem;
+    padding-right: 20rem;
+}
+
+.nav_right {
+    font-size: 18px;
+    line-height: 21.6px;
+    top: 0.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_h1 {
+    position: relative;
+    top: 70px;
+    width: 400px;
+    font-family: "Open Sans", serif;
+    font-size: 32px;
+    line-height: 38.4px;
+    left: -251px;
+}
+
+.content_p1 {
+    position: relative;
+    top: 10px;
+    width: 200px;
+    font-family: "Open Sans", serif;
+    font-size: 16px;
+    line-height: 19px;
+    left: -251px;
+}
+
+.div_border1 {
+    background-color: #371B02;
+    position: relative;
+    top: 13px;
+    width: 500px;
+    left: -251px;
+}
+
+.content_p2 {
+    position: relative;
+    color: #FFFFFF;
+    width: 200px;
+    font-family: "Open Sans", serif;
+    font-size: 16px;
+    line-height: 19px;
+    left: 14px;
+    top: 10px;
+}
+
+.div_border2 {
+    border: 1px solid #FFFFFF;
+    position: relative;
+    top: -15px;
+    width: 360px;
+    left: 131px;
+}
+
+.content_h1_2 {
+    display: flex;
+    justify-content: end;
+    height: 5px;
+    font-size: 90px;
+    line-height: 72px;
+    color: #995218;
+}
+
+.content_h1_3 {
+    font-size: 90px;
+    line-height: 72px;
+    color: #995218;
+}
+
+.container_2 {
+    height: 10px;
+}
+
+/*Main*/
+main {
+    height: 661px;
+    background-color: #371B02;
+}
+
+.About {
+    position: relative;
+    display: flex;
+    height: 4rem;
+    left: 1rem;
+    color: white;
+}
+
+.img_2 {}
+
+.section_grid_1 {
+    position: relative;
+    display: grid;
+    left: 1rem;
+}
+
+.section_grid_2 {
+    display: grid;
+    height: 0px;
+}
+
+.content_main_p {
+    color: white;
+    font-family: "Open Sans", serif;
+}
+
+.content_main_h2 {
+    color: white;
+    font-family: "Open Sans", serif;
+}
+
+.Advantages {
+    display: flex;
+    justify-content: end;
+    gap: 8rem;
+    background-color: #371B02;
+}
+
+.Advantages_h {
+    height: 25px;
+    font: Open Sans;
+    font-size: 42px;
+    color: #E4DCD6;
+}
+
+.Advantages_p {
+    height: 52px;
+    font: Open Sans;
+    width: 90px;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.Advantages_resolved_issues {
+    position: relative;
+    right: 2rem;
+}
